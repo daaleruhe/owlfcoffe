@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <title>Owlf Coffe</title>
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "assets/owlcarousel/assets/owl.carousel.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/owlcarousel/assets/owl.theme.default.min.css" %}">
+    <script src="{% static "assets/vendors/jquery.min.js" %}"></script>
+    <script src="{% static "assets/owlcarousel/owl.carousel.js" %}"></script>
 </head>
 <body>
     <header>
         <div>
-            <img src="" alt="Logo">
+            <img src="{% static "images/logo.png" alt="Logo" %}">
         </div>
         <nav>
             <ul>
@@ -22,11 +26,31 @@
         </nav>
     </header>
     <section class="galeria">
-        galeria
-    </section>
+        <div class="owl-carousel owl-drua">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=1" data-src-retina="https://placehold.it/350x250&text=1-retina" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=2" data-src-retina="https://placehold.it/350x250&text=2-retina" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=3" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=4" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=5" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=6" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=7" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=8" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=9" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=10" alt="">
+            <img class="owl-lazy" data-src="https://placehold.it/350x250&text=11" alt="">
+        </section>
     <section class="mapa">
         mapa
     </section>
+    <script>jQuery(document).ready(function($) {
+      $('.owl-carousel').owlCarousel({
+        items: 3,
+        lazyLoad: true,
+        loop: true,
+        margin: 10
+        });
+      });
+    </script>
     <footer>
         pie de pagina
     </footer>

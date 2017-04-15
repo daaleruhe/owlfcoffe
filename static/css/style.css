@@ -425,14 +425,52 @@ template {
 [hidden] {
   display: none;
 }
+/*mio*/
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background: #FFF;
-    margin: 0;
+    background: #ffffff;
 }
 
 
 header {
-    background-color: #2E2614;
+    background-color: #241b08;
+}
+
+section.galeria{
+    width: 90%;
+    margin:20px auto;
+}
+
+header img{
+    width: 150px;
+}
+
+header nav {
+    background: #8C7D20 ;
+    overflow:hidden;
+    width: 100%;
+}
+
+header nav ul {
+  list-style:none;
+  display: flex;
+  justify-content: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header nav ul li {
+
+}
+
+header nav  ul li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
