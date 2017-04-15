@@ -434,11 +434,12 @@ template {
 
 body {
     background: #ffffff;
+    font-family: Arial, Helvetica;
 }
 
 
 header {
-    background-color: #241b08;
+    background-color: #000000;
 }
 
 section.galeria{
@@ -464,8 +465,9 @@ header nav ul {
   margin: 0 auto;
 }
 
-header nav ul li {
-
+header nav ul li a:hover {
+  background: #403F2E;
+  color: #ffffff;
 }
 
 header nav  ul li a {
@@ -473,4 +475,20 @@ header nav  ul li a {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.owl-next, .owl-prev{
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.owl-drua {
+  text-align: center;
 }
